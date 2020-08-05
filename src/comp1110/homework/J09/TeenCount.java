@@ -1,7 +1,5 @@
 package comp1110.homework.J09;
 
-
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.IntPredicate;
