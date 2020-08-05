@@ -6,7 +6,7 @@ public class Sentence {
         this.words = new Word[size];
     }
     public boolean isValid(){
-        if (words.length < 1){return false;} // check length
+        if (words.length < 1){return false;}
         int onlyone = 0;
         for (Word word : words) {
             if (word.type == Word.Type.VERB) {
