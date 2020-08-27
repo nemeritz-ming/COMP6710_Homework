@@ -25,6 +25,7 @@ public class RecursiveTree extends Application {
 
         // Set scene of stage with size 150x150 and show the stage
         primaryStage.setScene(new Scene(root, 150, 150));
+
         primaryStage.show();
     }
 

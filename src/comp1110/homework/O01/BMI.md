@@ -8,3 +8,4 @@ double weight)`.
 * Implement this class (if you wish you may implement a main method that demonstrates its use).
 
 Once you have it working, add and commit your work.
+

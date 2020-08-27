@@ -6,21 +6,21 @@ public class Sentence {
         this.words = new Word[size];
     }
     public boolean isValid(){
-        if (words.length < 1){return false;}
+        if (words.length < 1){return false;} // check rule 1
         int onlyone = 0;
         for (Word word : words) {
             if (word.type == Word.Type.VERB) {
                 onlyone = onlyone + 1;
             }
         }
-        if(onlyone != 1){return false;} //check # of verbs
+        if(onlyone != 1){return false;} //check rule 4
         for (int i = 0; i < words.length-1; i++){
             if (words[i].type == Word.Type.NOUN && words[i+1].type != Word.Type.VERB){
                 return false; // check rule 2
             }
-            else if (words[i].type == Word.Type.ADJECTIVE && words[i+1].type != Word.Type.ADJECTIVE && words[i+1].type != Word.Type.NOUN){return false;}
+            else if (words[i].type == Word.Type.ADJECTIVE && words[i+1].type != Word.Type.ADJECTIVE && words[i+1].type != Word.Type.NOUN){return false;} // check rule 3
         }
-        return words[words.length - 1].type == Word.Type.NOUN || words[words.length - 1].type == Word.Type.VERB;
+        return words[words.length - 1].type == Word.Type.NOUN || words[words.length - 1].type == Word.Type.VERB; // check rule 5
     }
     public static class Word{
         String value;

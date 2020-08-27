@@ -2,8 +2,13 @@
   <library name="comp1110-homework">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/comp1110-homework.jar!/" />
+      <root url="file://$PATH_TO_FX$" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PATH_TO_FX$" />
+    </SOURCES>
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" type="SOURCES" />
   </library>
 </component>

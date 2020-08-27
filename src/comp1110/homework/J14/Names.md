@@ -5,4 +5,4 @@ end of the list by typing `ctrl-D`, by pressing the control and `D` keys,
 (`ctrl-Z` on Windows)), and print the names out in reverse order on separate lines
 (using a `for` loop ).
 
-Once you have it working, add and commit your work.
+Once you have it working, add and commit your work.     
